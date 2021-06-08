@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+body {
+  font-family: "Oswald";
+}
+
+.header-top-line {
+  background-color: #0282f9;
+  text-align: right;
+}
+
+.header-top-menu {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-top-menu li {
+  list-style-type: none;
+  padding-left: 50px;
+}
+.header-top-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+.header-top-menu li a span {
+  font-size: 6px;
+  vertical-align: text-top;
+}
+.header-top-menu li a i {
+  margin-left: 5px;
+}
+
+.header-main-section {
+  padding: 20px 0;
+}
+
+.header-main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-main-container .header-main-menu {
+  display: flex;
+}
+.header-main-container .header-main-menu li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+.header-main-container .header-main-menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #1c1c1c;
+}
+.header-main-container .header-main-menu li a i {
+  color: #0282f9;
+}
+.header-main-container .header-main-menu li:hover {
+  transform: scale(1.2);
+  border-radius: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.header-logo {
+  width: 5%;
+}
+.header-logo img {
+  width: 100%;
+}
+
+.input-search input {
+  width: 120px;
+  border-style: none;
+  border-bottom: 2px solid #0282f9;
+  text-align: right;
+}
+.input-search input::-moz-placeholder {
+  color: #1c1c1c;
+}
+.input-search input:-ms-input-placeholder {
+  color: #1c1c1c;
+}
+.input-search input::placeholder {
+  color: #1c1c1c;
+}
+.input-search i {
+  font-size: 12px;
+  position: relative;
+  top: 0;
+  right: 20px;
+}
+
+.jumbotron {
+  height: 270px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}

@@ -1,0 +1,106 @@
+// HEADER UPPER SECTION
+
+.header-top-line {
+    background-color: $brand_primary_color;
+    text-align: right;
+}
+
+.header-top-menu {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+        list-style-type: none;
+        padding-left: 50px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+
+            span {
+                font-size: 6px;
+                vertical-align: text-top;
+            }
+
+            i {
+                margin-left: 5px;
+            }
+        }
+    }  
+}
+
+// HEADER MAIN SECTION
+
+.header-main-section {
+    padding: 20px 0;
+}
+
+.header-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-main-menu {
+        display: flex;
+
+        li {
+            list-style-type: none;
+            padding: 0 10px;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: $brand_secondary_color;
+
+                i {
+                    color: $brand_primary_color;
+                }
+            }
+        }
+
+        li:hover {
+            transform: scale(1.2);
+            border-radius: 20px;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+    }
+}
+
+.header-logo {
+    width: 5%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.input-search {
+    input {
+        width: 120px;
+        border-style: none;
+        border-bottom: 2px solid $brand_primary_color;
+        text-align: right;
+    }
+
+    input::placeholder {
+        color: $brand_secondary_color;
+    }
+
+    i {
+        font-size: 12px;
+        position: relative;
+        top: 0;
+        right: 20px;
+    }
+}
+
+// JUMBOTRON
+
+.jumbotron {
+    height: 270px;
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+}
