@@ -117,7 +117,7 @@ body {
   top: -30px;
 }
 
-main {
+.main-first-section {
   background-color: #1c1c1c;
 }
 
@@ -152,4 +152,28 @@ main {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.main-second-section {
+  background-color: #0282f9;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.main-menu .main-menu-single-el {
+  width: calc( 100% / 5 );
+}
+.main-menu .main-menu-single-el img {
+  width: 20%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.main-menu .main-menu-single-el a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
 }
