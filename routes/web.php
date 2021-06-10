@@ -22,3 +22,26 @@ Route::get('/', function () {
 
     return view('home', $data);
 })->name('home');
+
+Route::get('/comic/{id}', function ($id) {
+    $comics_array = config('comics');
+
+    $single_comic = [];
+    foreach($comics_array as $comic) {
+        if($comic['id'] === (int)$id) {
+            $single_comic = $comic;
+        }
+    }
+    
+    // Se non trovo il fumetto, errore, errore 404
+    if(empty($single_comic)) {
+        abort('404');
+    }
+
+    $data = [
+        'single_comic' => $single_comic
+    ];
+    
+    // Altrimenti, stampo la view della pagina
+    return view('comic', $data);
+})->name('comic');
